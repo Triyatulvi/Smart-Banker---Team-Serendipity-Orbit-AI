@@ -1,0 +1,332 @@
+/* Base styles and resets */
+body,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* This makes sure brand is on the left and links on the right */
+  align-items: center;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #555;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Warna Navbar ketika di klik */
+.nav-links a:hover {
+  color: #4d61fc;
+}
+
+.nav-links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4d61fc;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.sign-in-btn {
+  background-color: #4d61fc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #4d61fc;
+}
+
+.gradient-text {
+  font-family: "Risque", serif;
+  background: -webkit-linear-gradient(right, #ff6b6b, #485563);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Styling */
+.hero {
+  padding: 50px 0;
+  background-color: #f7f9fc; /* Light background color for the hero section */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 0 0 50%; /* This means the content will take 50% width */
+  padding-right: 50px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: justify;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #4d61fc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #4d61fc;
+}
+
+.hero-image {
+  flex: 0 0 40%; /* This means the image will take 40% width */
+}
+
+.hero-image img {
+  max-width: 120%;
+  display: flex;
+  padding-right: 0%;
+}
+
+#informasi .hero-image img {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.percentages {
+  margin-top: 90px; /* Menambahkan jarak antara teks dan tombol */
+}
+.card-columns {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  margin: 0px;
+  padding: 10px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 230px; /* Lebar kartu */
+  height: 230px; /* Tinggi kartu (sama dengan lebar untuk membuatnya kotak persegi) */
+}
+
+.card h2 {
+  background: linear-gradient(
+    to right,
+    #716ad7,
+    #e44ec3,
+    #fa7e0c
+  ); /* Ganti warna latar belakang gradient sesuai kebutuhan */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Risque", serif;
+  font-size: 20px;
+}
+.card p {
+  /* Gaya teks di dalam elemen <p> di kartu */
+  font-size: 14px; /* Ukuran teks */
+  color: #555; /* Warna teks */
+  font-family: "Poppins", sans-serif;
+}
+
+.jarakcard {
+  margin-top: 20px; /* Menambahkan jarak antara teks dan tombol */
+}
+.cardpersegipanjang {
+  width: 400px;
+  height: 150px;
+}
+.informasi-detail {
+  background-color: #f7f9fc !important; /* Use your preferred light blue color code */
+  padding: 60px 0; /* Adjust padding as needed */
+  margin-top: 50px;
+}
+.timkami {
+  margin-right: 40px;
+  background-color: #f7f9fc; /* Light background color for the hero section */
+}
+/* Fitur */
+/* Reset some default styling */
+.imgocr {
+  max-width: 30%;
+  height: auto;
+  max-height: 30px;
+  margin-left: 130%;
+}
+
+.uploadgambar {
+  text-align: center;
+  font-family: "Risque", serif,bold;
+  font-size: 75%;
+  margin-left: 15%;
+}
+
+/* Contact */
+section#contact {
+  background-color: #6470c6;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 10rem;
+}
+section#contact form#contactForm .form-group,
+section#contact form#contactForm .form-group textarea {
+  padding: 10rem;
+  width: 180%;
+}
+
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 90;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 90;
+  color: #ced4da;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*------------footer------------*/
+.imgtim {
+  max-width: 50%;
+
+}
+.imgtimbawah {
+  max-width: 65%;
+ 
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  max-width: 100%;
+}
+
+.footer-info,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}

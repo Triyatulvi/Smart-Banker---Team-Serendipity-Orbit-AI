@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page Website Smart Banker</title>
+    <style>
+      canvas {
+          display:flex;
+          border: 1px solid black;
+          margin-top:10px;
+          height:800px;
+          width : 700px;
+         
+          
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="templates/assets/favicon.ico" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <style></style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light custom-navbar fixed-top"
+    >
+      <div class="container px-5">
+        <a class="navbar-brand gradient-text" href="#">Smart Banker</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav-links a:hover nav-links a:before"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#informasi">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fitur">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timkami">Tim Kami</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary explore-btn" onclick="location.href='#contact'">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home">
+      <section class="hero">
+        <div class="container px-5">
+          <div class="hero-content percentages">
+            <h1>Deteksi Bank Statement dengan Cepat dan Akurat</h1>
+            <p>
+              Kami menghadirkan solusi modern untuk membantu Anda mendapatkan
+              detail transaksi dari laporan bank Anda hanya dalam beberapa
+              detik. Computer vision canggih kami memastikan keakuratan dan dapat
+              menganalisis data laporan bank secara otomatis.
+            </p>
+            <a href="#fitur" class="btn btn-primary explore-btn">Coba Sekarang</a>
+            <div class="hero-content percentages">
+              <h1>
+                <p><b>90% | SMART AI | 100%</b></p>
+              </h1>
+              <p>Valid | Mudah digunakan | Cepat</p>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="{{ url_for('static', filename='gambar/foto_scan.png') }}"
+              alt="Smart Banker Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="informasi">
+        <div class="container px-5">
+          <div class="hero-content percentages">
+            <h1>Mengapa Harus SMART Banker?</h1>
+          </div>
+        </div>
+      </section>
+      <div class="container px-5">
+        <div class="hero-image img" style="margin-left: 0px">
+          <img
+            src="{{ url_for('static', filename='gambar/Gambar-2.png') }}"
+            alt="Gambar-2"
+            class="img-fluid"
+          />
+        </div>
+        <div class="card-columns">
+          <div class="card mt-3" style="margin-left: 90px">
+            <h2><b>Efisien</b></h2>
+            <br>
+            <p>
+              Dapatkan analisis laporan detail transaksi dalam hitungan detik 
+            </p>
+          </div>
+          <div class="card mt-3">
+            <h2><b>Keamanan Tinggi</b></h2>
+            <br>
+            <p>
+              Keamanan laporan bank menjadi hal yang krusial. Pada website ini
+              dapat mendeteksi tata letak dan desain laporan bank asli dan meminimalisir
+              terjadinya tindakan penipuan laporan bank
+            </p>
+          </div>
+          <div class="card mt-3">
+            <h2><b>Kemudahan Penggunaan</b></h2>
+            <br>
+            <p>
+              Unggah dokumen dan dapatkan hasilnya. Sangat mudah dan
+              tanpa kerumitan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="informasi-detail" class="informasi-detail">
+      <div class="container px-5">
+        <div class="hero-content percentages gradient-text">
+          <h1><b>Bagaimana Cara</b></h1>
+          <h1><b>Kerja Smart Banker ?</b></h1>
+          <p>
+            <b>
+            Pahami langkah-langkah ini agar mudah dalam penggunaan bank
+            statement menggunakan deteksi computer vision.
+            </b>
+          </p>
+        </div>
+        <!-- Card Section -->
+        <section id="card-section">
+          <div class="container px-5">
+            <div class="columns percentages">
+              <div class="col-lg-3 col-md-6">
+                <div class="card cardpersegipanjang">
+                  <div class="card-body">
+                    <h5 class="card-title">Langkah- 1</h5>
+                    <p class="card-text">
+                      Klik tombol Unggah dan pilih laporan bank Anda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 jarakcard">
+                <div class="card cardpersegipanjang">
+                  <div class="card-body">
+                    <h5 class="card-title">Langkah- 2</h5>
+                    <p class="card-text">
+                      Computer vision kami akan segera mendeteksi file tersebut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 jarakcard">
+                <div class="card cardpersegipanjang">
+                  <div class="card-body">
+                    <h5 class="card-title">Langkah- 3</h5>
+                    <p class="card-text">
+                      Lihat, tata letak detail transaksi laporan bank statement secara otomatis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Fitur-->
+      <section id="fitur">
+      <div class="container px-5">
+        <div class="uploadgambar percentages">
+          <h2><b>Fitur Deteksi Bank Statement</b></h2>
+          <br>
+            <br>
+            <!-- Upload Gambar -->
+            <input id="uploadInput" type="file" />
+            <canvas> </canvas>
+            <script>
+              /**
+              * "Upload" button onClick handler: uploads selected 
+              * image file to backend, receives an array of
+              * detected objects and draws them on top of image
+              */
+              const input = document.getElementById("uploadInput");
+              input.addEventListener("change",async(event) => {
+                  const file = event.target.files[0];
+                  const data = new FormData();
+                  data.append("image_file",file,"image_file");
+                  const response = await fetch("/detect",{
+                      method:"post",
+                      body:data
+                  });
+                  const boxes = await response.json();
+                  draw_image_and_boxes(file,boxes);
+              })
+          
+              /**
+              * Function draws the image from provided file
+              * and bounding boxes of detected objects on
+              * top of the image
+              * @param file Uploaded file object
+              * @param boxes Array of bounding boxes in format
+                [[x1,y1,x2,y2,object_type,probability],...]
+              */
+              function draw_image_and_boxes(file,boxes) {
+                 const img = new Image()
+                 img.src = URL.createObjectURL(file);
+                 img.onload = () => {
+                     const canvas = document.querySelector("canvas");
+                     canvas.width = img.width;
+                     canvas.height = img.height;
+                     const ctx = canvas.getContext("2d");
+                     ctx.drawImage(img,0,0);
+                     ctx.strokeStyle = "#00FF00";
+                     ctx.lineWidth = 20;
+                     ctx.font = "100px serif ";
+                     boxes.forEach(([x1,y1,x2,y2,label]) => {
+                         ctx.strokeRect(x1,y1,x2-x1,y2-y1);
+                         ctx.fillStyle = "#00ff00";
+                         const width = ctx.measureText(label).width;
+                         ctx.fillRect(x1,y1,width+10,25);
+                         ctx.fillStyle = "#000000";
+                         ctx.fillText(label,x1,y1+18);
+                     });
+                 }
+              }
+            </script>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+  </section>
+  <!-- Team-->
+  <section id="timkami">
+    <section class="hero-content percentages gradient-text percentages" id="team">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase percentages"><b>Our Team</b></h2>
+          <h2 class="section-subheading text-uppercase"><b>Team Serendipty</b></h2>
+      </div>
+    </section>
+    <div class="row" style="margin-left: 50px;">
+      <div class="col-lg-4">
+              <div class="team-member percentages" >
+                  <img class="mx-auto rounded-circle imgtim" src="{{ url_for('static', filename='gambar/Ari.png') }}" alt="..." />
+                  <h4>Ari Pramanda Jihan Kelvin</h4>
+                  <p class="text-muted">Actuarial Science</p>
+                  <p class="text-muted">Univ. Brawijaya</p>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="team-member percentages">
+                  <img class="mx-auto rounded-circle imgtim" src="{{ url_for('static', filename='gambar/Triyatul.png') }}" alt="..." />
+                  <h4>Triyatul Dewi Safitri</h4>
+                  <p class="text-muted">Information System </p>
+                  <p class="text-muted">UPNVJT</p>
+              </div>
+          </div>
+          <div class="row col-lg-4">
+              <div class="team-member percentages">
+                  <img class="mx-auto rounded-circle imgtim" src="{{ url_for('static', filename='gambar/Intan.png') }}" alt="..." />
+                  <h4>Intan Melinda Nurfajriana</h4>
+                  <p class="text-muted">Information System</p>
+                  <p class="text-muted">Univ. Nusantara PGRI Kediri</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="row" style="margin-left: 350px;">
+    <div class="col-lg-4">
+        <div class="team-member percentages" >
+            <img class="mx-auto rounded-circle imgtimbawah" src="{{ url_for('static', filename='gambar/Suci.png') }}" alt="..." />
+            <h4>Suci Laeliyah</h4>
+            <p class="text-muted">Statistics</p>
+            <p class="text-muted">Univ. Muhammadiyah Semarang</p>
+        </div>
+  </div>
+  <div class="col-lg-4">
+      <div class="team-member percentages">
+          <img class="mx-auto rounded-circle imgtimbawah" src="{{ url_for('static', filename='gambar/George.png') }}" alt="..." />
+          <h4>George Zefanya R P.</h4>
+          <p class="text-muted">English Literature</p>
+          <p class="text-muted">Univ. Brawijaya</p>   
+      </div>
+  </div>
+  <br>
+   <!-- Contact-->
+   <section id="contact">
+  </div>
+  <section class="page-section percentages" id="contact">
+    <div class="container submit_form">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading">Silahkan tinggalkan pesan dan kesan pada form yang tersedia </h3>
+        </div>
+        <form action="/submit" method="post">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" required>
+                    </div>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+ <!-- Footer-->
+ <section>
+<footer>
+  <div class="footer-container">
+      <div class="footer-logo">
+          <img src="{{ url_for('static', filename='gambar/SmartBanker.png') }}" alt="Logo">
+      </div>
+      <div class="footer-info">
+          <h2>About Us</h2>
+          <p>Kami memudahkan Anda untuk menganalisis laporan bank dengan cepat dan akurat. Apakah Anda membutuhkan deteksi untuk bank statement, Smart Banker siap membantu.</p>
+      </div>
+      <div class="footer-links">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#informasi">Informasi</a></li>
+              <li><a href="#fitur">Fitur</a></li>
+              <li><a href="#timkami">Tim Kami</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+          <h2>MSIB US</h2>
+          <p><i class="far fa-envelope"></i> Orbit Future Academy</p>
+      </div>
+  </div>
+  
+  <div class="footer-bottom">
+      <p>&copy; 2023 All Rights Reserved by Serendipty Team.</p>
+  </div>
+</footer>
+</section>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
